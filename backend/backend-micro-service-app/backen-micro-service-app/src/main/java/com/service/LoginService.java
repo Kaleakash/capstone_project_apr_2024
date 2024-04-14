@@ -23,6 +23,7 @@ public class LoginService {
 			return "You can't create admin account";
 		}else {
 			loginRepository.save(login);
+			//customerRepository.save(customer);
 			return "Account created successfully";
 		}
 	}
